@@ -3,6 +3,10 @@ angular.module('scheduleApp', ['firebase'])
   var ref = new Firebase("https://shining-heat-9261.firebaseio.com/days");
   var fb = $firebase(ref);
 
+  var syncObject = fb.$asObject();
+  syncObject.$bindTo($scope, 'days');
+
+
   $scope.reset = function(){
     fb.$set({
       monday: {
