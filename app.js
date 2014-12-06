@@ -12,29 +12,78 @@ angular.module('scheduleApp', ['firebase'])
       monday: {
         name: 'Monday',
         slots: {
-          0900: {
-            time: '9:00am',
+          1700: {
+            time: '5:00pm',
+            booked: false
+          },
+          1500: {
+            time: '3:00pm',
+            booked: false
+          },
+          1300: {
+            time: '1:00pm',
             booked: false
           },
           0110: {
             time: '11:00am',
+            booked: false
+          },
+          0900: {
+            time: '9:00am',
             booked: false
           }
         }
       },
-      tuesday: {
+      teusday: {
         name: 'Teusday',
         slots: {
-          0900: {
-            time: '9:00am',
+          1700: {
+            time: '5:00pm',
+            booked: false
+          },
+          1500: {
+            time: '3:00pm',
+            booked: false
+          },
+          1300: {
+            time: '1:00pm',
             booked: false
           },
           0110: {
             time: '11:00am',
             booked: false
+          },
+          0900: {
+            time: '9:00am',
+            booked: false
           }
         }
-      }
+      },
+      wednesday: {
+        name: 'Wednesday',
+        slots: {
+          1700: {
+            time: '5:00pm',
+            booked: false
+          },
+          1500: {
+            time: '3:00pm',
+            booked: false
+          },
+          1300: {
+            time: '1:00pm',
+            booked: false
+          },
+          0110: {
+            time: '11:00am',
+            booked: false
+          },
+          0900: {
+            time: '9:00am',
+            booked: false
+          }
+        }
+      },
     });
   }
 });

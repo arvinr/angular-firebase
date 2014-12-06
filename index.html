@@ -26,7 +26,7 @@
 
           <label for="{{ day.name }}--{{ $index }}">{{ slot.time }}<br>
             <span ng-if="slot.booked">Booked</span>
-            <span ng-if="slot.available">Available</span>
+            <span ng-if="!slot.booked">Available</span>
           </label>
         </div>
       </div>
